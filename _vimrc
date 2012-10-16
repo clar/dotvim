@@ -80,7 +80,8 @@ autocmd FileType java set omnifunc=javacomplete#Complet
 
 " 6
 "Pydiction
-let g:pydiction_location = 'C:\Program Files\Vim\vimfiles\ftplugin\pydiction\complete-dict'
+"let g:pydiction_location = 'C:\Program Files\Vim\vimfiles\ftplugin\pydiction\complete-dict'
+let g:pydiction_location = 'C:\Program Files\Vim\vimfiles\bundle\pydiction\complete-dict'
 
 " 7
 " set font, do not put space around '='
@@ -91,15 +92,17 @@ set guifont=Consolas:h11
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
-" tags 
-set tags=G:\ProgramData\Dropbox\Proj\vimtags\tags
+" path where to search tag, for multiple-files-proj 
+" http://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks
+" (may not work on windows)
+set tags=./tags;/
 
 " WinManager
 let g:winManagerWindowLayout='FileExplorer|TagList'
 nmap wm :WMToggle<cr>
 
 " cscope show in quickfix
-" set cscopequickfix=s-,c-,d-,i-,t-,e-
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 " 10
 "MiniBufExplorer

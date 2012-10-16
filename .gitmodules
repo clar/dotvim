@@ -1,3 +1,27 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule ".\\bundle\\pydiction"]
+	path = .\\bundle\\pydiction
+	url = https://github.com/vim-scripts/Pydiction
+[submodule ".\\bundle\\taglist"]
+	path = .\\bundle\\taglist
+	url = https://github.com/vim-scripts/taglist.vim
+[submodule ".\\bundle\\winmanager"]
+	path = .\\bundle\\winmanager
+	url = https://github.com/vim-scripts/winmanager
+[submodule ".\\bundle\\cscope_maps"]
+	path = .\\bundle\\cscope_maps
+	url = https://github.com/chazy/cscope_maps
+[submodule ".\\bundle\\tabbar"]
+	path = .\\bundle\\tabbar
+	url = https://github.com/vim-scripts/TabBar
+[submodule ".\\bundle\\minibufexpl"]
+	path = .\\bundle\\minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim
+[submodule "grep"]
+	path = grep
+	url = https://github.com/vim-scripts/grep.vim
+[submodule ".\\bundle\\grep"]
+	path = .\\bundle\\grep
+	url = https://github.com/vim-scripts/grep.vim
