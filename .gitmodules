@@ -1,21 +1,28 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+    ignore = untracked
 [submodule "bundle/pydiction"]
 	path = bundle/pydiction
 	url = http://github.com/vim-scripts/Pydiction.git
+    ignore = untracked
 [submodule ".\\bundle\\taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim
+    ignore = untracked
 [submodule ".\\bundle\\winmanager"]
 	path = bundle/winmanager
 	url = https://github.com/vim-scripts/winmanager
+    ignore = untracked
 [submodule "bundle/cscope_maps"]
 	path = bundle/cscope_maps
 	url = http://github.com/chazy/cscope_maps.git
+    ignore = untracked
 [submodule ".\\bundle\\minibufexpl"]
 	path = bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim
+    ignore = untracked
 [submodule ".\\bundle\\grep"]
 	path = bundle/grep
 	url = https://github.com/vim-scripts/grep.vim.git
+    ignore = untracked

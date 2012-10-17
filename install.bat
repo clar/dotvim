@@ -1,4 +1,4 @@
-git clone https://github.com/clar/dotvim.git "C:\Program Files\Vim\vimfiles"
+rem git clone https://github.com/clar/dotvim.git "C:\Program Files\Vim\vimfiles"
 
 fsutil hardlink create "C:\Program Files\Vim\_vimrc" "C:\Program Files\Vim\vimfiles\_vimrc"
 
