@@ -26,3 +26,6 @@
 	path = bundle/grep
 	url = https://github.com/vim-scripts/grep.vim.git
     ignore = untracked
+[submodule "bundle/mru"]
+	path = bundle/mru
+	url = https://github.com/vim-scripts/mru.vim
