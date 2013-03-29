@@ -81,7 +81,8 @@ autocmd FileType java set omnifunc=javacomplete#Complet
 " 6
 "Pydiction
 "let g:pydiction_location = 'C:\Program Files\Vim\vimfiles\ftplugin\pydiction\complete-dict'
-let g:pydiction_location = 'C:\Program Files\Vim\vimfiles\bundle\pydiction\complete-dict'
+"let g:pydiction_location = 'C:\Program Files (x86)\Vim\vimfiles\bundle\pydiction\complete-dict'
+let g:pydiction_location = $VIM.'\vimfiles\bundle\pydiction\complete-dict'
 
 " 7
 " set font, do not put space around '='
