@@ -82,7 +82,7 @@ autocmd FileType java set omnifunc=javacomplete#Complet
 "Pydiction
 "let g:pydiction_location = 'C:\Program Files\Vim\vimfiles\ftplugin\pydiction\complete-dict'
 "let g:pydiction_location = 'C:\Program Files (x86)\Vim\vimfiles\bundle\pydiction\complete-dict'
-let g:pydiction_location = $VIM.'\vimfiles\bundle\pydiction\complete-dict'
+let g:pydiction_location = $VIM.'\vimfiles\PluginConfig\pydiction\complete-dict'
 
 " 7
 " set font, do not put space around '='
@@ -100,7 +100,8 @@ set tags=./tags;/
 
 " WinManager
 let g:winManagerWindowLayout='FileExplorer|TagList'
-nmap wm :WMToggle<cr>
+" this map may lead to slow performance of 'w' command, need to change it.
+" nmap wm :WMToggle<cr>
 
 " cscope show in quickfix
 set cscopequickfix=s-,c-,d-,i-,t-,e-
@@ -117,4 +118,15 @@ let g:miniBufExplModSelTarget = 1
 nnoremap <silent> <F3> :Grep<CR>
 
 
+"
+set lines=36 
+set columns=124
+winpos 220 140
+set guioptions-=T
+set guioptions-=m
 
+
+"
+let mapleader = ","
+nmap <leader>v :edit $MYVIMRC<CR>
+" test line
