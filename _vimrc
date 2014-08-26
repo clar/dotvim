@@ -28,6 +28,9 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+
+let mapleader = ","
+
 " use pathogen to manage vim plugins 
 " http://www.cnblogs.com/crazyhack/archive/2012/05/16/2503622.html
 call pathogen#runtime_append_all_bundles()
@@ -62,7 +65,7 @@ set backspace=2
 " 启用鼠标  
 set mouse=a  
 " 启用行号  
-set nu 
+set relativenumber
 
 " 5
 "自动补全  
@@ -101,7 +104,7 @@ set tags=./tags;/
 " WinManager
 let g:winManagerWindowLayout='FileExplorer|TagList'
 " this map may lead to slow performance of 'w' command, need to change it.
-" nmap wm :WMToggle<cr>
+nmap <leader>wm :WMToggle<cr>
 
 " cscope show in quickfix
 set cscopequickfix=s-,c-,d-,i-,t-,e-
@@ -116,6 +119,17 @@ let g:miniBufExplModSelTarget = 1
 " 11
 " grep
 nnoremap <silent> <F3> :Grep<CR>
+" Search the current file for what's currently in the search register and display matches
+nmap <silent> <leader>gs :vimgrep /<C-r>// %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
+" Search the current file for the word under the cursor and display matches
+nmap <silent> <leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
+" Search the current file for the WORD under the cursor and display matches
+nmap <silent> <leader>gW :vimgrep /<C-r><C-a>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
+" next, prev, open, close 
+nmap <leader>n :cnext<CR>
+nmap <leader>p :cprevious<CR>
+nmap <leader>ccl :cclose<CR>
+nmap <leader>co :copen<CR>
 
 
 "
@@ -127,6 +141,16 @@ set guioptions-=m
 
 
 "
-let mapleader = ","
 nmap <leader>v :edit $MYVIMRC<CR>
-" test line
+nmap <leader>s :w<CR>
+nmap <leader>q :q<CR>
+nmap <leader>wq :wq<CR>
+" 
+"
+"
+
+map <C-\> :split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+"
+set backupdir=$HOME/tmp
